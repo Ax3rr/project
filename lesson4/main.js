@@ -4,15 +4,19 @@
 let num = prompt("Введите число");
 
 let endNum = {
-    десятки:Math.floor (num/10%10),
-    единицы:Math.floor (num%10),
-    сотни:Math.floor (num/100%10)
+    tens:Math.floor (num/10%10),
+    units:Math.floor (num%10),
+    hundreds:Math.floor (num/100%10)
 
 };
 
-if (num<=999) {
+if (num<=999&num>9) {
     console.log(endNum);
 
+}
+
+else if (num<=9) {
+console.log ("Количество единиц:" + endNum.units);
 }
 
 else {
