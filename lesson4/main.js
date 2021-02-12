@@ -20,5 +20,5 @@ console.log ("Количество единиц:" + endNum.units);
 }
 
 else {
-    console.log("ERROR!")
+    console.log("ERROR!!!")
 };
